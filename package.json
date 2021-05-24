@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/WlodarskiMichal/E-shop/issues"
   },
-  "homepage": "https://github.com/WlodarskiMichal/E-shop#readme"
+  "homepage": "https://github.com/WlodarskiMichal/E-shop#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
