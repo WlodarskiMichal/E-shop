@@ -24,4 +24,17 @@ $(document).ready(function(){
             }
         }
     })
+    // isotope
+    let $grid = $(".grid").isotope({
+        itemSelector: '.grid-items',
+        layoutMode:'fitRows'
+    })
+
+    //filter items on button click
+
+    $(".button-group").on("click", "button", function(){
+        let filterValue = $(this).attr('data-filter');
+        $grid.isotope({filter: filterValue});
+    })
+
 })
