@@ -24,9 +24,10 @@ $(document).ready(function(){
             }
         }
     })
+
     // isotope
     let $grid = $(".grid").isotope({
-        itemSelector: '.grid-items',
+        itemSelector: '.grid-item',
         layoutMode:'fitRows'
     })
 
@@ -35,6 +36,25 @@ $(document).ready(function(){
     $(".button-group").on("click", "button", function(){
         let filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue});
+    })
+
+    //top sale carousel
+
+    $("#best-sellers .owl-carousel").owlCarousel({
+        loop:true,
+        nav:false,
+        dots:true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
     })
 
 })

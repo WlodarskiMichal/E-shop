@@ -99,4 +99,13 @@ button:focus {
   margin-right: -4rem;
 }
 
+/*Special deals*/
+#special-deal .grid {
+  margin-left: 0.2rem;
+}
+#special-deal .grid .grid-item {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
