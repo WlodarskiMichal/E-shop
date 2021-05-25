@@ -7,7 +7,6 @@ $(document).ready(function(){
     });
 
     //top sale carousel
-
     $("#top-sale .owl-carousel").owlCarousel({
         loop:true,
         nav:true,
@@ -25,21 +24,19 @@ $(document).ready(function(){
         }
     })
 
-    // isotope
+    // isotope cdn
     let $grid = $(".grid").isotope({
         itemSelector: '.grid-item',
         layoutMode:'fitRows'
     })
 
     //filter items on button click
-
     $(".button-group").on("click", "button", function(){
         let filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue});
     })
 
     //top sale carousel
-
     $("#best-sellers .owl-carousel").owlCarousel({
         loop:true,
         nav:false,
